@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="predict.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="predict.js" type="module"></script>
+    <title>Predict if your mushroom is edible!</title>
+</head>
+<form>
+<div class = "row">
+    <div id = "blue" class = "column">
+        <h1>Your Score</h1>
+        <label>Kills</label><br>
+        <input type="text" id = "blueKills" name = "kills"><br><br>
+        <label>Deaths</label><br>
+        <input type="text" id = "blueDeaths" name = "Deaths"><br><br>
+        <label>Assists</label><br>
+        <input type="text" id = "blueAssists" name = "Assists"><br><br>
+        <label>First Dragon</label><br>
+        <select id = "blueDragons">
+            <option value = "1">Yes</option>
+            <option value = "0">No</option>
+        </select><br><br>
+        <label>First Herald</label><br>
+        <select id = "blueHeralds">
+            <option value = "1">Yes</option>
+            <option value = "0">No</option>
+        </select><br><br>
+        <label>First Tower</label><br>
+        <select id = "blueTowersDestroyed">
+            <option value = "1">Yes</option>
+            <option value = "0">No</option>
+        </select><br><br>
+        <label>Team Average Level</label><br>
+        <input type="text" id = "blueAvgLevel"><br><br>
+        <label>Total CS</label><br>
+        <input type="text" id = "blueTotalMinionsKilled">
+    </div>
+        <div id = "red" class = "column">
+            <h1>Enemy Score</h1>
+            <label>Kills</label><br>
+            <input type="text" id = "redKills" name = "kills"><br><br>
+            <label>Deaths</label><br>
+            <input type="text" id = "redDeaths" name = "Deaths"><br><br>
+            <label>Assists</label><br>
+            <input type="text" id = "redAssists" name = "Assists"><br><br>
+            <label>First Dragon</label><br>
+            <select id = "redDragons">
+                <option value = "1">Yes</option>
+                <option value = "0">No</option>
+            </select><br><br>
+            <label>First Herald</label><br>
+            <select id = "redHeralds">
+                <option value = "1">Yes</option>
+                <option value = "0">No</option>
+            </select><br><br>
+            <label>First Tower</label><br>
+            <select id = "redTowersDestroyed">
+                <option value = "1">Yes</option>
+                <option value = "0">No</option>
+            </select><br><br>
+            <label>Team Average Level</label><br>
+            <input type="text" id = "redAvgLevel"><br><br>
+            <label>Total CS</label><br>
+            <input type="text" id = "redTotalMinionsKilled">
+        </div>
+</div>
+<input class ="btn" type="submit" value="SUBMIT" onClick="prediction()">
+</form>
+</div>
+<div class = "prediction">
+    <h3>Prediction (ignore the pre-generated text):</h3>
+    <h4 id="prediction">Your Result will show here</h4>
+</div>
+<button class = "btn" onclick="location.href='index.html'">Go to the decision tree</button>
+</body>
+</html>

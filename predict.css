@@ -1,0 +1,44 @@
+html{
+    background-image: url(images/leagueoflegendssiegeminionsjpg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.column {
+    display: inline-block;
+    border-radius: 15px; 
+    position:relative;
+    width: 35%;
+    padding: 100px;
+    height: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0,0,0,0.6);
+    color: black;
+    
+    
+  }
+.row{
+    text-align: center  ;
+}
+
+.prediction {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0,0,0,0.6);
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+#blue{
+    color: rgb(121, 214, 246);
+}
+#red{
+    color:red
+}
+.btn{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    font-size: large;
+}
